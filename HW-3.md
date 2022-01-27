@@ -43,9 +43,9 @@ Among the HTTP Authentication methods, the most popular ones are Basic, Digest, 
 	Result: YWRtaW46MTIzNDU=
 ```
 5.	The client browser then sends it by adding this Base64 value inside the Authorization header. Like:  **Authorization : Basic YWRtaW46MTIzNDU=**
-6.	The server compares the encode value sent in the Authorization header with the same base64 encode value of the username and password registered on the server. If both values match, it sends HTTP status code 200 with the requested data. But if it doesn't match, the server sends 401 as specified along with WWW-Authenticate.
+6.  The server sends HTTP status code 200 with the requested data, or it sends 401 status code.
 ### 8 - Define RestTemplate in Spring ?
-RestTemplate is the default class in Spring library to handle synchronous HTTP requests on client side.
+RestTemplate is the default class in Spring library to handle synchronous HTTP requests on client side. RestTemplate is thread-safe. RestTemplate is built on the servlet structure. So it follows thread-per-request approach. Performance problems arise as the application will consume the thread-pool. It went into maintenance mode with Spring 5. It will probably not be supported in future versions.
 ### 9 – What is idempotant and which HTTP methods are idempotant ?
 If a method is called once and the result is the same when it is called more than once, it is called an idempotent method. In other words, an idempotent method should not have any side-effects. 
 *	The http methods Get, Delete, Put, Options, Head are idempotent methods. But Post method is not.

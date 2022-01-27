@@ -11,7 +11,8 @@
 *	HTTP is required in REST to ensure communication between server and client, while SOAP can also support protocols such as TCP/IP STMP.
 ### 2 - Difference between acceptance test and functional test ?
 **Test**; It is checking whether a piece of software or software coded to achieve a goal achieves the intended goal. Test types are examined under 4 headings such as Unit Test, Integration Test, Functional Test, Acceptance Test.
- **Here are the differences between acceptance testing and functional testing:**
+
+ **Here are the differences between them:**
 *	Functional testing aims to make result-oriented inferences while testing the operation of a feature. The goal is to test whether the function works.
 *	Acceptance testing is considered end-user testing. The end user knows nothing about the project and tries to use the project for certain purposes by himself. It is tested whether the system meets the desired needs.
 *	While Acceptance testing is last and final step perform, Functional testing is performed before acceptance testing.
@@ -32,7 +33,7 @@ POST and PUT are both HTTP methods used to send data to the server. POST is only
 *	A few http methods such as Get, Head or Options are safe methods.
 *	Put,Delete, Post, Patch methods are unsafe methods.
 ### 7 - How does HTTP Basic Authentication work ?
-Among the HTTP Authentication methods, the most popular ones are Basic, Digest, Bearer and NTLM authentication mechanisms. Basic Authentication is used for server-to-server authentication. Basic Authentication is generally used in Microservice architecture and with TLS/HTTPS. Basic Authentication is a method for the client to provide a username and password when making a request.
+Among the HTTP Authentication methods, the most popular ones are Basic, Digest, Bearer and NTLM authentication mechanisms. It is used for server-to-server authentication.It is a method for the client to provide a username and password when making a request.
 **Basic Authentication Stages:**
 1.	Browser (Client) sends HTTP Get request to page using Basic Authentication.
 2.	The server responds with "401 Unauthorized WWW-Authenticate : Basic .This actually means send me your user + password.
@@ -97,14 +98,14 @@ CSRF (Cross-site Request Forgery) it is the execution of transactions against th
 
 ### 14 - What are the core components of the HTTP request and HTTP response ?
 **Http request core components are:**
-*	HTTP Version – Indicates version
-*	Request Body – Represents message content
-*	Request Header – Contains metadata, like cache settings 
-*	URI – Identifies the resource on the server
-*	Verb – Indicates HTTP methods like GET, POST, and PUT
+*	HTTP Version 
+*	Request Body 
+*	Request Header 
+*	URI 
+*	Verb 
 
 **Likewise Http response core components are:**
-*	HTTP Version – Indicates the present version of HTTP
-*	Response Body – Represents the response message content
-*	Response Header – Consists of metadata, like content length 
-*	Status/Response Code – Indicates the server status for the requested resource
+*	HTTP Version 
+*	Response Body
+*	Response Header 
+*	Status/Response Code 
